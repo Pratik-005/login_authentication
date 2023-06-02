@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="main-login">
+    <!-- <div class="left-login">
+    
+      <img src="login-image.png" class="left-login-image" alt="Pessoa trabalhando">
+    </div> -->
+    <div class="right-login">
+      <div class="card-login">
+        <h1>Sign Up</h1>
+        <div class="textfield">
+   
+            <input type="text" name="usuario" placeholder="Username" id="dummy">
+          </div>
+        <div class="textfield">
+   
+          <input type="text" name="usuario" placeholder="Email" id="name">
+        </div>
+        <div class="textfield">
+          
+          <input type="password" name="password" placeholder="Password" id="password">
+        </div>
+        <button class="btn-login" onclick="signup()">Sign up</button>
+
+    
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+   const signup=()=>{
+        let id = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+        localStorage.setItem(id,id);
+        localStorage.setItem(password,password);
+        window.location.replace("/");
+    
+   }
+</script>
+</html>
+
